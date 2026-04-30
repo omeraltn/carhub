@@ -1,4 +1,4 @@
-- 🚀 En son projemi paylaşmaktan heyecan duyuyorum: Car Hub! 🚘
+# En son projemi paylaşmaktan heyecan duyuyorum: Car Hub! 🚘
 
 Farklı marka ve modellerde belirli araç detaylarını bulmak çoğu zaman bir labirentte gezinmek gibi olabiliyor. Car Hub’ı, kullanıcıların araç verilerini zahmetsizce inceleyebileceği, filtreleyebileceği ve keşfedebileceği akıcı, hızlı ve sezgisel bir platform sunarak bu sorunu çözmek için geliştirdim.
 
