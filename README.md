@@ -1,10 +1,5 @@
-# Kütüphaneler
+# CAR HUB WEBSİTE
 
-- motion
-- react-paginate
-- react-router-dom
-- react-select
-- axios
-- tailwindcss
-- typescript
-- react
+- Car Hub is a modern web application designed for users to browse, filter, and discover various vehicle models efficiently. Built with React, TypeScript, Vite, and Tailwind CSS, the project offers a highly responsive and visually appealing user interface enhanced by Framer Motion animations. The application retrieves comprehensive vehicle data via the OpenDataSoft public API, implementing dynamic filtering (by make, model, and year) alongside pagination to provide a seamless car exploration experience.
+
+- Car Hub, kullanıcıların çeşitli araç modellerine göz atmasını, filtrelemesini ve keşfetmesini sağlayan modern bir web uygulamasıdır. React, TypeScript, Vite ve Tailwind CSS ile geliştirilen proje, Framer Motion animasyonlarıyla zenginleştirilmiş oldukça duyarlı ve görsel olarak çekici bir kullanıcı arayüzü sunar. Kapsamlı araç verilerini OpenDataSoft açık API'si aracılığıyla çeken uygulama, kesintisiz bir araç keşif deneyimi sunmak için dinamik filtreleme (marka, model ve yıla göre) ve sayfalama yöntemlerini kullanır.
