@@ -51,7 +51,7 @@ const List: FC = () => {
     <>
       <div ref={containerRef} className="padding-x max-width mb-10 ">
         <div className="home-cars-wrapper">
-          {cars.length === 0 ? (
+          {cars?.length === 0 ? (
             <Container>Aradığınız araç bulunumadı.</Container>
           ) : (
             cars?.map((car) => <Card car={car} key={car.id} />)
