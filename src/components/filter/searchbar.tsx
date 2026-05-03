@@ -63,7 +63,11 @@ const Searchbar: FC = () => {
           />
         </div>
 
-        <button type="submit" className="mb-1 search-btn sm:hidden">
+        <button
+          type="submit"
+          className="mb-1 search-btn sm:hidden"
+          aria-label="ara"
+        >
           <img src="/search.svg" alt="ara" className="size-6" />
         </button>
       </div>
@@ -90,7 +94,7 @@ const Searchbar: FC = () => {
               onChange={(e) => setModel(e?.target.value)}
             />
           </div>
-          <button type="submit" className="mb-1 search-btn ">
+          <button type="submit" className="mb-1 search-btn " aria-label="ara">
             <img src="/search.svg" alt="ara" className="size-6" />
           </button>
         </div>

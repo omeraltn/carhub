@@ -25,6 +25,7 @@ const Modal: FC<Props> = ({ isOpen, close, car }) => {
             <button
               className="car-details-close-btn cursor-pointer"
               onClick={close}
+              aria-label="Modal'ı Kapat"
             >
               X
             </button>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FC } from "react";
+import React, { useEffect, useRef, useState, type FC } from "react";
 import { fetchCars } from "../../utils/service";
 import type { Car } from "../../types";
 import Loader from "../loader";
@@ -15,6 +15,39 @@ const List: FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [totalCount, setTotalCount] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const renderPaginationButton = (
+    page: number,
+    type: "page" | "prev" | "next" | "jump-prev" | "jump-next",
+    element: React.ReactNode,
+  ) => {
+    if (!React.isValidElement(element)) return element;
+
+    const ariaLabel =
+      type === "page"
+        ? `Sayfa ${page}`
+        : type === "prev"
+          ? "Önceki sayfa"
+          : type === "next"
+            ? "Sonraki sayfa"
+            : type === "jump-prev"
+              ? "Önceki sayfa grubu"
+              : "Sonraki sayfa grubu";
+
+    const paginationElement = element as React.ReactElement<{
+      children?: React.ReactNode;
+    }>;
+
+    return (
+      <button
+        type="button"
+        aria-label={ariaLabel}
+        className="rc-pagination-item-link"
+      >
+        {paginationElement.props.children}
+      </button>
+    );
+  };
 
   //urldeki arama parametrelerine eriş
   const make: string = searchParams.get("make") || "";
@@ -69,6 +102,7 @@ const List: FC = () => {
             //sayfa değişince sayfanın başına kaydır
             containerRef.current?.scrollIntoView();
           }}
+          itemRender={renderPaginationButton}
           className="pagination"
         />
       </div>

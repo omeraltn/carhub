@@ -41,6 +41,7 @@ const Hero: FC = () => {
           transition={{ duration: 0.3 }} //  süre
           src="/hero.png"
           className="object-contain xl:w-150 xl:h-119.25 drop-shadow-xl"
+          alt="gri sag capraz açıdan gri bmw araç"
         />
       </div>
     </div>

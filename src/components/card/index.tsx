@@ -30,6 +30,7 @@ const Card: FC<Props> = ({ car }) => {
         <img
           src={getImage(car, true)}
           className="size-full object-contain min-h-50"
+          alt={`${car.model}`}
         />
         {/* detaylar */}
         <div className="w-full">
