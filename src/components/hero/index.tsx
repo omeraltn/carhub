@@ -13,7 +13,7 @@ const Hero: FC = () => {
   const rounded = useTransform(() => Math.round(count.get()));
 
   useEffect(() => {
-    const controls = animate(count, 4360, { duration: 1.5 });
+    const controls = animate(count, 1766, { duration: 1.5 });
     return () => controls.stop();
   }, []);
   return (
