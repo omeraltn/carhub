@@ -21,7 +21,13 @@ const Info: FC<Props> = ({ car }) => {
     <div className="flex-between">
       {arr.map((item, key) => (
         <div key={key} className="flex-center flex-col gap-1">
-          <img src={item.icon} width={25} height={25} alt="icon" />
+          <img
+            src={item.icon}
+            width={25}
+            height={25}
+            alt={`${item.text} icon`}
+            loading="lazy"
+          />
           <p>{item.text}</p>
         </div>
       ))}

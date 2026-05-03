@@ -42,6 +42,9 @@ const Hero: FC = () => {
           src="/hero.png"
           className="object-contain xl:w-150 xl:h-119.25 drop-shadow-xl"
           alt="gri sag capraz açıdan gri bmw araç"
+          width={600}
+          height={450}
+          loading="lazy"
         />
       </div>
     </div>

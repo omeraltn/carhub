@@ -68,7 +68,14 @@ const Searchbar: FC = () => {
           className="mb-1 search-btn sm:hidden"
           aria-label="ara"
         >
-          <img src="/search.svg" alt="ara" className="size-6" />
+          <img
+            src="/search.svg"
+            alt="search icon"
+            className="size-6"
+            width={24}
+            height={24}
+            loading="lazy"
+          />
         </button>
       </div>
 
@@ -82,8 +89,11 @@ const Searchbar: FC = () => {
           <div className="relative flex-1 ">
             <img
               src="/model-icon.png"
-              alt="model-icon"
+              alt="model search icon"
               className="size-6 absolute left-4 top-1/2 -translate-y-1/2  z-1 "
+              width={24}
+              height={24}
+              loading="lazy"
             />
             <input
               id="model"
@@ -95,7 +105,14 @@ const Searchbar: FC = () => {
             />
           </div>
           <button type="submit" className="mb-1 search-btn " aria-label="ara">
-            <img src="/search.svg" alt="ara" className="size-6" />
+            <img
+              src="/search.svg"
+              alt="search icon"
+              className="size-6"
+              width={24}
+              height={24}
+              loading="lazy"
+            />
           </button>
         </div>
       </div>

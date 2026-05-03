@@ -12,6 +12,7 @@ const Header: FC = () => {
             alt="black and white bmw logo"
             width={50}
             height={50}
+            loading="lazy"
           />
           <h1 className="text-2xl md:text-3xl font-bold text-transparent text-gradient">
             CarHub
